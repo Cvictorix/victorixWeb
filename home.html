@@ -12,7 +12,7 @@
 <body id="">
 	<header class="header">
 		<div class="container logo-nav-container">
-			<img src="Imagenes/myLogo7.png" width="200" height="65">
+			<img src="Imagenes/myLogo2.png" width="200" height="65">
 			<span class="menu-icon">Ver Menú</span>
 			<nav class="navigation">
 				<ul>
@@ -28,123 +28,12 @@
 	<main class="main">
 		<div class="container">
 			<H1>MI PRIMER PAGUINA WEB</H1>
-				<H1>Procedure for the Cisco 2000, 2500, 3000, 4000, AccessPro, and 7000</H1>
-			<p>Step-by-Step Procedure
-Attach a terminal or PC with terminal emulation to the console port of the router. Use the following terminal settings:
- 9600 baud rate 
-No parity 
-8 data bits 
-1 stop bit 
-No flow control
-Type show version and record the setting of the configuration register. Click here to see output of a show version command.
-The configuration register setting is usually 0x2102 or 0x102.
-
-Using the switch, turn off the router and then turn it on.
-Press Break on the terminal keyboard within 60 seconds of the powerup to put the router into ROMMON.
-If the break sequence doesn't work, try CTRL+BREAK or use the terminal program to send the break as an ascii code.
-
-Type o/r 0x2142 at the > prompt to boot from Flash without loading the configuration.
-Type i at the > prompt.
-The router reboots but ignores its saved configuration.
-
-Type no after each setup question or press Ctrl-C to skip the initial setup procedure.
-Type enable at the Router> prompt.
-You'll be in enable mode and see the Router# prompt.
-
-Important Type config mem or copy start running to copy the nonvolatile RAM (NVRAM) into memory. Do not type config term.
-Type wr term or show running.
-The show running and wr term commands show the configuration of the router. In this configuration you see under all the interfaces the shutdown command, which means all interfaces are currently shutdown. Also, you can see the passwords either in encrypted or unencrypted format.
-
-Type config term and make the changes.
-The prompt is now hostname(config)#.
-
-Type enable secret <password>.
-Issue the no shutdown command on every interface that is used. If you issue a show ip interface brief command, every interface that you want to use should be "up up".
-Type config-register 0x2102, or the value you recorded in step 2.
-Press Ctrl-z to leave the configuration mode.
-The prompt is now hostname#.
-
-Type write mem or copy running startup to commit the changes.
-			</p>
-			<p>Step-by-Step Procedure
-Attach a terminal or PC with terminal emulation to the console port of the router. Use the following terminal settings:
- 9600 baud rate 
-No parity 
-8 data bits 
-1 stop bit 
-No flow control
-Type show version and record the setting of the configuration register. Click here to see output of a show version command.
-The configuration register setting is usually 0x2102 or 0x102.
-
-Using the switch, turn off the router and then turn it on.
-Press Break on the terminal keyboard within 60 seconds of the powerup to put the router into ROMMON.
-If the break sequence doesn't work, try CTRL+BREAK or use the terminal program to send the break as an ascii code.
-
-Type o/r 0x2142 at the > prompt to boot from Flash without loading the configuration.
-Type i at the > prompt.
-The router reboots but ignores its saved configuration.
-
-Type no after each setup question or press Ctrl-C to skip the initial setup procedure.
-Type enable at the Router> prompt.
-You'll be in enable mode and see the Router# prompt.
-
-Important Type config mem or copy start running to copy the nonvolatile RAM (NVRAM) into memory. Do not type config term.
-Type wr term or show running.
-The show running and wr term commands show the configuration of the router. In this configuration you see under all the interfaces the shutdown command, which means all interfaces are currently shutdown. Also, you can see the passwords either in encrypted or unencrypted format.
-
-Type config term and make the changes.
-The prompt is now hostname(config)#.
-
-Type enable secret <password>.
-Issue the no shutdown command on every interface that is used. If you issue a show ip interface brief command, every interface that you want to use should be "up up".
-Type config-register 0x2102, or the value you recorded in step 2.
-Press Ctrl-z to leave the configuration mode.
-The prompt is now hostname#.
-
-Type write mem or copy running startup to commit the changes.
-			</p>
-			<p>Step-by-Step Procedure
-Attach a terminal or PC with terminal emulation to the console port of the router. Use the following terminal settings:
- 9600 baud rate 
-No parity 
-8 data bits 
-1 stop bit 
-No flow control
-Type show version and record the setting of the configuration register. Click here to see output of a show version command.
-The configuration register setting is usually 0x2102 or 0x102.
-
-Using the switch, turn off the router and then turn it on.
-Press Break on the terminal keyboard within 60 seconds of the powerup to put the router into ROMMON.
-If the break sequence doesn't work, try CTRL+BREAK or use the terminal program to send the break as an ascii code.
-
-Type o/r 0x2142 at the > prompt to boot from Flash without loading the configuration.
-Type i at the > prompt.
-The router reboots but ignores its saved configuration.
-
-Type no after each setup question or press Ctrl-C to skip the initial setup procedure.
-Type enable at the Router> prompt.
-You'll be in enable mode and see the Router# prompt.
-
-Important Type config mem or copy start running to copy the nonvolatile RAM (NVRAM) into memory. Do not type config term.
-Type wr term or show running.
-The show running and wr term commands show the configuration of the router. In this configuration you see under all the interfaces the shutdown command, which means all interfaces are currently shutdown. Also, you can see the passwords either in encrypted or unencrypted format.
-
-Type config term and make the changes.
-The prompt is now hostname(config)#.
-
-Type enable secret <password>.
-Issue the no shutdown command on every interface that is used. If you issue a show ip interface brief command, every interface that you want to use should be "up up".
-Type config-register 0x2102, or the value you recorded in step 2.
-Press Ctrl-z to leave the configuration mode.
-The prompt is now hostname#.
-
-Type write mem or copy running startup to commit the changes.
-			</p>
+				
 		</div>
 	</main>
 	<footer class="footer">
 		<div class="container">
-			<img src="Imagenes/mylogo5.png" width="200" height="65">
+			<img src="Imagenes/myLogo2.png" width="200" height="65">
 			<p>Creado por VRC 2019</p>
 		</div>
 	</footer>
