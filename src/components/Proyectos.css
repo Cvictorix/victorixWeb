@@ -1,0 +1,140 @@
+.proyectos {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.proyectos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.proyectos-titulo {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.proyectos-subtitulo {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.proyecto-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto-imagen {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.proyecto-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.proyecto-card:hover .proyecto-imagen img {
+  transform: scale(1.1);
+}
+
+.proyecto-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(102, 126, 234, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.proyecto-card:hover .proyecto-overlay {
+  opacity: 1;
+}
+
+.proyecto-link {
+  padding: 0.8rem 2rem;
+  background: white;
+  color: #667eea;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.proyecto-link:hover {
+  background: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.proyecto-info {
+  padding: 1.5rem;
+}
+
+.proyecto-titulo {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.proyecto-descripcion {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.proyecto-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tecnologia-tag {
+  background: #e8eaf6;
+  color: #667eea;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .proyectos {
+    padding: 3rem 1rem;
+  }
+
+  .proyectos-titulo {
+    font-size: 2rem;
+  }
+
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+  }
+}
